@@ -1,0 +1,5 @@
+steps:
+  - label: ":git: Check tags"
+    command:
+      - git log --decorate HEAD^^...HEAD
+      - git tag
