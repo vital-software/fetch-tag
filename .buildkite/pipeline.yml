@@ -1,8 +1,8 @@
 steps:
   - label: ":git: log"
     command:
-      - git log --decorate $BUILDKITE_COMMIT
+      - git --no-pager log --decorate $BUILDKITE_COMMIT
 
   - label: ":git: tag"
     command:
-      - git tag
+      - git --no-pager tag
